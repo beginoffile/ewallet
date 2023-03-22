@@ -166,6 +166,11 @@ img {
     }
 }
 
+.navegacion__link--blanco{
+    color:var(--blanco);
+
+}
+
 .nucleus{
     margin-top: 3rem;
 }
@@ -251,23 +256,23 @@ img {
 
 .seguridad::before,
 .seguridad::after{
-    position: absolute;
     background-color: var(--blanco);
     content: '';
     height: 20rem;
     width: 120%;
+    position: absolute;
 }
 
 .seguridad::before{
     top:-10rem;
     left: 0;
-    rotate: 3deg;
+    transform: rotate(3deg);
 }
 
 .seguridad::after{
     bottom: -10rem;
     left: 0;
-    rotate: 3deg;
+    transform: rotate(-3deg);
 }
 
 
@@ -360,4 +365,29 @@ img {
     color:var(--primario);
     font-weight: 700;
     text-align: right;
+}
+
+.footer{
+    background-color: #5A30A0;
+    padding: 3rem;
+
+}
+
+@media(min-width:768px){
+    .footer__grid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer__logo{
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+}
+
+@media(min-width:768px){
+    .footer__logo{
+        margin: 0;
+    }
 }
